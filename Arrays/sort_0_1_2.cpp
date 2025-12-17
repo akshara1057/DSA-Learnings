@@ -1,3 +1,22 @@
+/*
+Problem:
+Given an array containing only 0s, 1s, and 2s, sort the array in ascending order using only single iteration
+The array may contain any number of 0s, 1s, and 2s.
+
+Source: Coding Ninjas (Practice Problem)
+
+Approach (Counting Method):
+1. Count the number of 0s, 1s, and 2s in the array.
+2. Overwrite the array in order:
+   - First fill all 0s
+   - Then fill all 1s
+   - Then fill all 2s
+This sorts the array in a single pass over counts.
+
+Time Complexity: O(N)
+Space Complexity: O(1)
+*/
+
 #include <bits/stdc++.h> 
 using namespace std;
 void sort012(int *arr, int n) {  
